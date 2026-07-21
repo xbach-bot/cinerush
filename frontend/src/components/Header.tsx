@@ -13,9 +13,8 @@ const Header = () => {
           <Link to="/">Lịch chiếu</Link>
           <Link to="/">Rạp chiếu</Link>
           <Link to="/movies">Phim chiếu</Link>
-          <Link to="/">Review phim</Link>
-          <Link to="/">Top phim</Link>
-          <Link to="/">Blog phim</Link>
+          <Link to="/admin" style={{ color: '#d31d28', fontWeight: 600 }}>Quản trị (Admin)</Link>
+          <Link to="/staff/ticket-check" style={{ color: '#0284c7', fontWeight: 600 }}>Soát vé (Staff)</Link>
         </nav>
         <div className="header-actions">
           <div className="search-icon">🔍</div>

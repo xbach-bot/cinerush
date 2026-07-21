@@ -30,7 +30,7 @@ const Footer = () => {
             <h4>CHĂM SÓC KHÁCH HÀNG</h4>
             <p>Hồ Chí Minh: Tầng 5, Tòa nhà CineRush, Quận 1</p>
             <p>Hà Nội: Tầng 3, Tòa nhà CineRush, Cầu Giấy</p>
-            <p>Thời gian làm việc:<br/>Thứ 2 - Chủ Nhật (8:00 - 23:00)</p>
+            <p>Thời gian làm việc:<br />Thứ 2 - Chủ Nhật (8:00 - 23:00)</p>
             <p>Hotline: 1900 1234 56</p>
           </div>
         </div>
@@ -39,7 +39,7 @@ const Footer = () => {
             <div className="footer-logo"><Logo height={50} /></div>
             <div>
               <p>CÔNG TY CỔ PHẦN GIẢI TRÍ CINERUSH</p>
-              <p>Trụ sở chính: Tầng 5, Tòa nhà CineRush, Phường Bến Nghé, Quận 1, TP. HCM</p>
+              <p>Trụ sở chính: Tầng 2, Tòa nhà SanNam, Cầu Giấy, thành phố Hà Nội</p>
               <p>©Copyright CineRush 2026</p>
             </div>
           </div>
