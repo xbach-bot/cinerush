@@ -1,13 +1,13 @@
 import axios from 'axios';
 
 const Api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8000/api', // Adjust according to your backend
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8000/api',
   headers: {
     'Content-Type': 'application/json',
   },
 });
 
-// Add a request interceptor for tokens if needed
+// Request Interceptor
 Api.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('token');
@@ -21,15 +21,15 @@ Api.interceptors.request.use(
   }
 );
 
-// Add a response interceptor for error handling
+// Response Interceptor
 Api.interceptors.response.use(
   (response) => {
     return response;
   },
   (error) => {
-    // Handle global errors here (e.g. 401 Unauthorized)
     return Promise.reject(error);
   }
 );
 
+export const apiClient = Api;
 export default Api;

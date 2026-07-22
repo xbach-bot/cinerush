@@ -1,19 +1,19 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import CustomerLayout from './layouts/CustomerLayout';
+import CustomerLayout from './layouts/customer/CustomerLayout';
 import AdminLayout from './layouts/admin/AdminLayout';
-import StaffLayout from './layouts/StaffLayout';
+import StaffLayout from './layouts/staff/StaffLayout';
 
 // Customer Pages
-import Home from './pages/Home';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Movies from './pages/Movies';
-import MovieDetails from './pages/MovieDetails';
-import ShowtimeSeats from './pages/ShowtimeSeats';
-import Checkout from './pages/Checkout';
-import MyBookings from './pages/MyBookings';
-import MyTickets from './pages/MyTickets';
-import Profile from './pages/Profile';
+import Home from './pages/customer/Home';
+import Login from './pages/customer/Login';
+import Register from './pages/customer/Register';
+import Movies from './pages/customer/Movies';
+import MovieDetails from './pages/customer/MovieDetails';
+import ShowtimeSeats from './pages/customer/ShowtimeSeats';
+import Checkout from './pages/customer/Checkout';
+import MyBookings from './pages/customer/MyBookings';
+import MyTickets from './pages/customer/MyTickets';
+import Profile from './pages/customer/Profile';
 
 // Admin Pages
 import Dashboard from './pages/admin/Dashboard';

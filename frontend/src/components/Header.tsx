@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { CiSearch } from 'react-icons/ci';
 import './Header.css';
 import Logo from './Logo';
 
@@ -17,7 +18,9 @@ const Header = () => {
           <Link to="/staff/ticket-check" style={{ color: '#0284c7', fontWeight: 600 }}>Soát vé (Staff)</Link>
         </nav>
         <div className="header-actions">
-          <div className="search-icon">🔍</div>
+          <div className="search-icon">
+            <CiSearch size={26} strokeWidth={0.5} />
+          </div>
           <Link to="/login" className="login-btn">Đăng nhập</Link>
         </div>
       </div>
