@@ -1,17 +1,7 @@
 import React, { useState } from 'react';
 import { QrCode, CheckCircle, XCircle, AlertTriangle, Search } from 'lucide-react';
 
-interface ScanResult {
-  status: 'VALID' | 'ALREADY_USED' | 'INVALID';
-  ticketCode?: string;
-  movieTitle?: string;
-  cinemaName?: string;
-  roomName?: string;
-  seatCode?: string;
-  showtime?: string;
-  customerName?: string;
-  usedAt?: string;
-}
+import type { ScanResult } from '../../types';
 
 const TicketCheck: React.FC = () => {
   const [qrInput, setQrInput] = useState('');
