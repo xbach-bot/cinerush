@@ -1,26 +1,7 @@
 import React from 'react';
 import { Search, Eye } from 'lucide-react';
 
-interface BookingMock {
-  id: number;
-  bookingCode: string;
-  customerName: string;
-  movieTitle: string;
-  cinemaName: string;
-  showtime: string;
-  seats: string;
-  totalAmount: number;
-  paymentMethod: string;
-  status: 'CONFIRMED' | 'PENDING' | 'CANCELLED' | 'EXPIRED';
-  createdAt: string;
-}
-
-const mockBookings: BookingMock[] = [
-  { id: 1, bookingCode: 'BK-884910', customerName: 'Nguyễn Văn A', movieTitle: 'Avatar: Fire and Ash', cinemaName: 'Cinerush Landmark 81', showtime: '19:30 - 21/07/2026', seats: 'F07, F08', totalAmount: 240000, paymentMethod: 'MOMO', status: 'CONFIRMED', createdAt: '2026-07-21 10:15' },
-  { id: 2, bookingCode: 'BK-884909', customerName: 'Trần Thị B', movieTitle: 'Lật Mặt 8: Đam Mê', cinemaName: 'Cinerush Landmark 81', showtime: '20:00 - 21/07/2026', seats: 'H10, H11', totalAmount: 220000, paymentMethod: 'VNPAY', status: 'CONFIRMED', createdAt: '2026-07-21 10:12' },
-  { id: 3, bookingCode: 'BK-884908', customerName: 'Lê Hoàng C', movieTitle: 'Detective Conan 28', cinemaName: 'Cinerush Vincom Bà Triệu', showtime: '18:15 - 22/07/2026', seats: 'D04', totalAmount: 95000, paymentMethod: 'MOCK', status: 'PENDING', createdAt: '2026-07-21 10:05' },
-  { id: 4, bookingCode: 'BK-884907', customerName: 'Phạm Quốc D', movieTitle: 'Dune: Part Two', cinemaName: 'Cinerush Landmark 81', showtime: '21:15 - 21/07/2026', seats: 'G05, G06', totalAmount: 220000, paymentMethod: 'MOCK', status: 'EXPIRED', createdAt: '2026-07-21 09:45' },
-];
+import { mockBookings } from '../../mocks';
 
 const AdminBookings: React.FC = () => {
   return (

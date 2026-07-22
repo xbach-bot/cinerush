@@ -1,21 +1,7 @@
 import React from 'react';
 import { Search, Shield, Lock, Unlock } from 'lucide-react';
 
-interface UserMock {
-  id: number;
-  email: string;
-  fullName: string;
-  phone: string;
-  status: 'ACTIVE' | 'LOCKED' | 'DISABLED';
-  roles: string[];
-}
-
-const mockUsers: UserMock[] = [
-  { id: 1, email: 'admin@cinerush.vn', fullName: 'Đào Đức (System Admin)', phone: '0988123456', status: 'ACTIVE', roles: ['ADMIN', 'CINEMA_MANAGER'] },
-  { id: 2, email: 'manager.lm81@cinerush.vn', fullName: 'Hoàng Bách', phone: '0912345678', status: 'ACTIVE', roles: ['CINEMA_MANAGER'] },
-  { id: 3, email: 'staff.checker1@cinerush.vn', fullName: 'Nguyễn Văn Staff', phone: '0909999888', status: 'ACTIVE', roles: ['TICKET_CHECKER'] },
-  { id: 4, email: 'customer.test@gmail.com', fullName: 'Lê Văn Khách', phone: '0933111222', status: 'LOCKED', roles: ['CUSTOMER'] },
-];
+import { mockUsers } from '../../mocks';
 
 const AdminUsers: React.FC = () => {
   return (
