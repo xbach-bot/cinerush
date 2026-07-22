@@ -1,0 +1,72 @@
+import type { Booking } from '../types';
+
+export const mockBookings: Booking[] = [
+  {
+    id: 1,
+    bookingCode: 'BK-884910',
+    customerName: 'Nguyễn Văn A',
+    movieTitle: 'Avatar: Fire and Ash',
+    cinemaName: 'Cinerush Landmark 81',
+    showtime: '19:30 - 21/07/2026',
+    seats: 'F07, F08',
+    subtotal: 240000,
+    discountAmount: 0,
+    feeAmount: 0,
+    totalAmount: 240000,
+    paymentMethod: 'MOMO',
+    status: 'CONFIRMED',
+    createdAt: '2026-07-21 10:15',
+    updatedAt: '2026-07-21 10:15'
+  },
+  {
+    id: 2,
+    bookingCode: 'BK-884909',
+    customerName: 'Trần Thị B',
+    movieTitle: 'Lật Mặt 8: Đam Mê',
+    cinemaName: 'Cinerush Landmark 81',
+    showtime: '20:00 - 21/07/2026',
+    seats: 'H10, H11',
+    subtotal: 220000,
+    discountAmount: 0,
+    feeAmount: 0,
+    totalAmount: 220000,
+    paymentMethod: 'VNPAY',
+    status: 'CONFIRMED',
+    createdAt: '2026-07-21 10:12',
+    updatedAt: '2026-07-21 10:12'
+  },
+  {
+    id: 3,
+    bookingCode: 'BK-884908',
+    customerName: 'Lê Hoàng C',
+    movieTitle: 'Detective Conan 28',
+    cinemaName: 'Cinerush Vincom Bà Triệu',
+    showtime: '18:15 - 22/07/2026',
+    seats: 'D04',
+    subtotal: 95000,
+    discountAmount: 0,
+    feeAmount: 0,
+    totalAmount: 95000,
+    paymentMethod: 'MOCK',
+    status: 'PENDING',
+    createdAt: '2026-07-21 10:05',
+    updatedAt: '2026-07-21 10:05'
+  },
+  {
+    id: 4,
+    bookingCode: 'BK-884907',
+    customerName: 'Phạm Quốc D',
+    movieTitle: 'Dune: Part Two',
+    cinemaName: 'Cinerush Landmark 81',
+    showtime: '21:15 - 21/07/2026',
+    seats: 'G05, G06',
+    subtotal: 220000,
+    discountAmount: 0,
+    feeAmount: 0,
+    totalAmount: 220000,
+    paymentMethod: 'MOCK',
+    status: 'EXPIRED',
+    createdAt: '2026-07-21 09:45',
+    updatedAt: '2026-07-21 09:45'
+  }
+];

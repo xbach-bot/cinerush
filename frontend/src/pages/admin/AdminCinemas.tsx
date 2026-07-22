@@ -1,52 +1,7 @@
 import React from 'react';
 import { Building2, Plus, Edit3, MapPin, Layers } from 'lucide-react';
 
-interface RoomMock {
-  id: number;
-  code: string;
-  name: string;
-  roomType: string;
-  totalSeats: number;
-  status: 'ACTIVE' | 'MAINTENANCE';
-}
-
-interface CinemaMock {
-  id: number;
-  code: string;
-  name: string;
-  address: string;
-  province: string;
-  status: 'ACTIVE' | 'INACTIVE';
-  rooms: RoomMock[];
-}
-
-const mockCinemas: CinemaMock[] = [
-  {
-    id: 1,
-    code: 'CIN-CGV-LM81',
-    name: 'Cinerush Landmark 81',
-    address: '720A Điện Biên Phủ, Phường 22, Bình Thạnh, TP. Hồ Chí Minh',
-    province: 'TP. Hồ Chí Minh',
-    status: 'ACTIVE',
-    rooms: [
-      { id: 101, code: 'R01', name: 'Phòng 01 (IMAX)', roomType: 'IMAX', totalSeats: 180, status: 'ACTIVE' },
-      { id: 102, code: 'R02', name: 'Phòng 02 (4DX)', roomType: 'FOUR_DX', totalSeats: 120, status: 'ACTIVE' },
-      { id: 103, code: 'R03', name: 'Phòng 03 (Standard)', roomType: 'STANDARD', totalSeats: 150, status: 'MAINTENANCE' },
-    ]
-  },
-  {
-    id: 2,
-    code: 'CIN-HANOI-ST',
-    name: 'Cinerush Vincom Bà Triệu',
-    address: '191 Bà Triệu, Lê Đại Hành, Hai Bà Trưng, Hà Nội',
-    province: 'Hà Nội',
-    status: 'ACTIVE',
-    rooms: [
-      { id: 201, code: 'R01', name: 'Phòng 01 Standard', roomType: 'STANDARD', totalSeats: 160, status: 'ACTIVE' },
-      { id: 202, code: 'R02', name: 'Phòng 02 ScreenX', roomType: 'SCREEN_X', totalSeats: 140, status: 'ACTIVE' },
-    ]
-  }
-];
+import { mockCinemas } from '../../mocks';
 
 const AdminCinemas: React.FC = () => {
   return (
