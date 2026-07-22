@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet, Link } from 'react-router-dom';
 import { LogOut, Film } from 'lucide-react';
-import './admin/AdminLayout.css';
+import '../admin/AdminLayout.css';
 
 const StaffLayout: React.FC = () => {
   return (
